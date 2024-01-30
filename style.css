@@ -1,0 +1,220 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+    font-family:'Android';
+    src: url('fontes/IDroid.ttf') format('truetype');
+    font-weight: normal;
+    
+}
+
+:root{
+    --cor00: #E9E6C3;
+    --cor01: #c5ebd6;
+    --cor02: #83e1ad;
+    --cor03: #3ddc84;
+    --cor04: #2fa866;
+    --cor05: #1a5c37;
+    --cor06: #063d1e;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: 'Bebas Neue', sans-serif;
+    --fonte-android: 'Android' , sans-serif;
+
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: var(--fonte-padrao);
+    background-color: var(--cor00);
+}
+
+body a.external::after{
+    content:'\00A0\1F517';
+}
+
+
+header {
+    background-image:linear-gradient(to bottom, var(--cor04), var(--cor06) );
+    min-height: 150px;
+    text-align: center;
+    padding-top: 40px;
+}
+
+header > h1{
+    color: white;
+    font-family: var(--fonte-destaque);
+    font-size: 3em;
+    font-weight: normal;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.568);
+
+}
+
+header > p {
+    color: white;
+    font-family: var(--fonte-padrao);
+    font-size: 1.2em;
+    font-weight: normal;
+    max-width: 500px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: auto;
+    padding-bottom: 20px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.137);
+
+}
+
+nav{
+    background-color: var(--cor06);
+    padding: 12px;
+    box-shadow: 0px 6px 9px rgba(0, 0, 0, 0.507) ;
+    
+}
+
+nav > a{
+    color: var(--cor03);
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition-duration: 0.5s;
+}
+
+nav a:hover{
+    background-color: var(--cor03);
+    border-radius: 6px;
+    color: var(--cor06);
+}
+
+main{
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 30px;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.404);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+main p{
+    padding: 15px 0px;
+    text-indent: 30px;
+    text-align: justify;
+    line-height: 2em;
+    font-size: 1.2em;
+}
+
+main strong{
+    color: black;
+    font-weight: bolder;
+    padding: 4px 6px;
+    
+}
+
+main a{
+    text-decoration: none;
+    color: var(--cor06);
+    background-color: #2fa8653b;
+    padding: 2px 5px ;
+}
+
+
+main > article > h1{
+    color: var(--cor06);
+    font-family: var(--fonte-android);
+    font-size: 1.5em;
+}
+
+main > article > h2{
+    text-indent: 10px;
+    font-family: var(--fonte-android);
+    font-size: 1.3em;
+    background-image: linear-gradient(to right, rgba(6, 212, 99, 0.356), transparent);
+    padding: 3px 0px;
+    
+    
+}
+
+main img {
+    width: 100%;
+    
+}
+
+img.bug{
+    max-width: 400px;
+    margin: auto;
+    display: block;
+    
+}
+
+div.video{
+    background-color: var(--cor06);
+    margin: 0px -20px 30px -20px;
+    border-radius: 5px;
+    padding: 26px 0px;
+    padding-bottom: 56%;
+    position: relative;
+
+}
+
+div.video > iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+
+}
+
+aside{
+    background-color: var(--cor02);
+    border-radius: 9px;
+    padding: 9px 9px;
+    box-shadow: 4px 2px 8px rgba(0, 0, 0, 0.199);
+}
+
+aside ul{
+    background-color: var(--cor01);
+    border-radius: 9px;
+    columns: 2;
+    padding: 10px 0px 10px 60px;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.253);
+   
+}
+
+aside h3{
+    color: white;
+    background-color: var(--cor06);
+    padding: 10px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 9px 9px 0px 0px;
+}
+
+footer{
+    color: rgba(0, 0, 0, 0.89);
+    font-weight: bold;
+    background-color: var(--cor05);
+    text-align: center;
+    padding: 3px 3px;
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+
+}
+
+footer a:hover{
+    text-decoration: underline;
+    background-color: var(--cor04);
+    border-radius: 3px;
+    
+}
