@@ -138,7 +138,8 @@ main > article > h2{
     font-family: var(--fonte-android);
     font-size: 1.3em;
     background-image: linear-gradient(to right, rgba(6, 212, 99, 0.356), transparent);
-    padding: 3px 0px;
+    padding: 3px 15px;
+    text-align: left;
     
     
 }
